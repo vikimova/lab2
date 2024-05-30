@@ -18,10 +18,10 @@ DEFINES += INPUTDIR=\\\"$$PWD/input/\\\"
 
 HEADERS += tst_test1.h \
     ../app/myfunc.h \
-	../app/quadratic.h \
+    ../app/quadratic.h \
     fibonachi_test.h \
     tst_stdout.h \
-	tst_quadratic.h
+    tst_quadratic.h
 
 SOURCES += main.cpp \
     ../app/myfunc.c \
