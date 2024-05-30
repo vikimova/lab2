@@ -6,5 +6,13 @@ struct Roots {
 };
 #endif
 
+#ifndef RESULT
+#define RESULT
+struct Result {
+	struct Roots roots;
+	int err;
+};
+#endif // !RESULT
 
-struct Roots calc_sqrt_roots(double a, double b, double c);
+
+struct Result calc_sqrt_roots(double a, double b, double c);
