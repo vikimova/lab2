@@ -1,4 +1,4 @@
-#ifdef ROOTS
+#ifndef ROOTS
 #define ROOTS
 struct Roots {
 	double root_1;
@@ -9,10 +9,10 @@ struct Roots {
 #ifndef RESULT
 #define RESULT
 struct Result {
-	struct Roots roots;
+    struct Roots *roots;
 	int err;
 };
-#endif // !RESULT
+#endif
 
 
 struct Result calc_sqrt_roots(double a, double b, double c);
