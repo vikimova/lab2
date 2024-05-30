@@ -2,6 +2,7 @@
 
 #include "quadratic.h"
 
+
 struct Roots {
 	double root_1;
 	double root_2;
