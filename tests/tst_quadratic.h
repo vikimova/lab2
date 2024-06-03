@@ -13,11 +13,12 @@ TEST(TestNoErrorQudraticRoots, NormalRoots) {
     Result expected = {r, 0};
     Result got = calc_sqrt_roots(1, 2, -3);
 
-    printf("%f", got.roots->root_1);
+    printf("%f:%f\n", got.roots->root_1, got.roots->root_2);
+    float r1 = got.roots->root_1;
 
     EXPECT_EQ(got.err, expected.err);
-    EXPECT_EQ(expected.roots->root_1, got.roots->root_1);
-    EXPECT_EQ(expected.roots->root_2, got.roots->root_2);
+    EXPECT_FLOAT_EQ(expected.roots->root_1, r1);
+    EXPECT_FLOAT_EQ(expected.roots->root_2, got.roots->root_2);
 }
 
 TEST(TestNoErrorQudraticRoots, EqualRoots) {
@@ -26,9 +27,11 @@ TEST(TestNoErrorQudraticRoots, EqualRoots) {
     Result expected = {r, 0};
 	Result got = calc_sqrt_roots(1, -2, 1);
 
+     printf("%f:%f\n", got.roots->root_1, got.roots->root_2);
+
     EXPECT_EQ(expected.err, got.err);
-    EXPECT_EQ(expected.roots->root_1, got.roots->root_1);
-    EXPECT_EQ(expected.roots->root_2, got.roots->root_2);
+    EXPECT_FLOAT_EQ(expected.roots->root_1, got.roots->root_1);
+    EXPECT_FLOAT_EQ(expected.roots->root_2, got.roots->root_2);
 }
 
 TEST(TestQuadraticWithErrorRoots, PositiveOk) {
@@ -38,8 +41,8 @@ TEST(TestQuadraticWithErrorRoots, PositiveOk) {
 	Result got = calc_sqrt_roots(-1, -7, -19);
 
     EXPECT_EQ(got.err, expected.err);
-    EXPECT_EQ(got.roots->root_1, expected.roots->root_1);
-    EXPECT_EQ(got.roots->root_2, expected.roots->root_2);
+    EXPECT_DOUBLE_EQ(got.roots->root_1, expected.roots->root_1);
+    EXPECT_DOUBLE_EQ(got.roots->root_2, expected.roots->root_2);
 }
 
 

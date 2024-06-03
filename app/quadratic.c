@@ -16,7 +16,7 @@ struct Result calc_sqrt_roots(float a, float b, float c) {
 	if (D == 0) {
 		// корни одинаковые
 		root_1 = b / (2*a);
-		root_2 = root_1;
+        root_2 = b / (2*a);
 		err = 0;
 	} else if (D < 0) {
 		// нет действительных корней
@@ -32,6 +32,7 @@ struct Result calc_sqrt_roots(float a, float b, float c) {
 
     roots.root_1 = root_1;
     roots.root_2 = root_2;
+
     res.roots = rp;
     res.err = err;
 
