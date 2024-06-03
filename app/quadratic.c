@@ -35,8 +35,6 @@ struct Result calc_sqrt_roots(float a, float b, float c) {
     res.roots = rp;
     res.err = err;
 
-	printf("%f \n", roots.root_1);
-
 	return res;
 }
 
