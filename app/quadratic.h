@@ -1,8 +1,8 @@
 #ifndef ROOTS
 #define ROOTS
 struct Roots {
-	double root_1;
-	double root_2;
+	float root_1;
+	float root_2;
 	// структура для хранения корней уравнения
 };
 #endif
@@ -18,4 +18,4 @@ struct Result {
 
 
 // функция вычисления корней квадратного уравнения
-struct Result calc_sqrt_roots(double a, double b, double c);
+struct Result calc_sqrt_roots(float a, float b, float c);
