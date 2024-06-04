@@ -1,8 +1,8 @@
 [![CI/CD GitHub Actions](https://github.com/vikimova/lab2/actions/workflows/build.yml/badge.svg)](https://github.com/vikimova/lab2/actions/workflows/build.yml)
 [![Coverage Status](https://coveralls.io/repos/vikimova/lab2/badge.svg?branch=master)](https://coveralls.io/github/vikimova/lab2?branch=master)
-[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=vikimova_1&metric=alert_status)](https://sonarcloud.io/dashboard?id=vikimova_1)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=vikimova_1&metric=bugs)](https://sonarcloud.io/summary/new_code?id=vikimova_1)
-[![Code smells](https://sonarcloud.io/api/project_badges/measure?project=vikimova_1&metric=code_smells)](https://sonarcloud.io/dashboard?id=vikimova_1)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=vikimova_2&metric=alert_status)](https://sonarcloud.io/dashboard?id=vikimova_2)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=vikimova_2&metric=bugs)](https://sonarcloud.io/summary/new_code?id=vikimova_2)
+[![Code smells](https://sonarcloud.io/api/project_badges/measure?project=vikimova_2&metric=code_smells)](https://sonarcloud.io/dashboard?id=vikimova_2)
 
 # Пример работы связки Qt + Google Test (gtest) + QtCreator
 
