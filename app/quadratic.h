@@ -12,6 +12,7 @@ struct Roots {
 struct Result {
     struct Roots *roots;
 	int err;
+	char *err_mes;
 	// структура для хранения результата вычисления и ошибки
 };
 #endif
