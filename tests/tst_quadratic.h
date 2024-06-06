@@ -47,7 +47,7 @@ TEST(TestNoErrorQudraticRoots, ZeroKoefficients) {
     EXPECT_FLOAT_EQ(expected.roots->root_2, got.roots->root_2);
 }
 
-TEST(TestQuadraticWithErrorRoots, PositiveOk) {
+TEST(TestQuadraticWithErrorRoots, NonValidRoots) {
     Roots roots = {-1, -1};
     Roots *r = &roots;
     Result expected = {r, 1, ""};
