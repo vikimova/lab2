@@ -28,9 +28,11 @@ jobs:
       BUILD_WRAPPER_OUT_DIR: build_wrapper_output_directory # Directory where build-wrapper output will be placed
     steps:
       - uses: actions/checkout@v2
+        if: always()
         with:
           fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
       - uses: actions/setup-java@v3
+        if: always()
         with:
           distribution: 'temurin' # See 'Supported distributions' for available options
           java-version: '17'
@@ -39,24 +41,31 @@ jobs:
       - run: sudo apt-get update -y && sudo apt-get install -y qt5-qmake qtbase5-dev qtchooser qtbase5-dev-tools
       - run: qmake
       - name: Set up Python 3.8 for gcovr
+        if: always()
         uses: actions/setup-python@v4
         with:
           python-version: 3.8
       - name: install gcovr 5.0
+        if: always()
         run: |
           pip install gcovr==5.0 # 5.1 is not supported
       - name: Install sonar-scanner and build-wrapper
+        if: always()
         uses: SonarSource/sonarcloud-github-c-cpp@v2
       - name: Run build-wrapper
+        if: always()
         run: |
           build-wrapper-linux-x86-64 --out-dir ${{ env.BUILD_WRAPPER_OUT_DIR }} make
       - name: Run tests to generate coverage statistics
+        if: always()
         run: |
           ./tests/tests
       - name: Collect coverage into one XML report
+        if: always()
         run: |
           gcovr --sonarqube > coverage.xml
       - name: Run sonar-scanner
+        if: always()
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }} # Put the name of your token here
