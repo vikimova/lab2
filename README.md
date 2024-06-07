@@ -1,8 +1,8 @@
 [![CI/CD GitHub Actions](https://github.com/vikimova/lab2/actions/workflows/build.yml/badge.svg)](https://github.com/vikimova/lab2/actions/workflows/build.yml)
-[![Coverage Status](https://coveralls.io/repos/vikimova/lab2/badge.svg?branch=master)](https://coveralls.io/github/vikimova/lab2?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/vikimova/lab2/badge.svg?branch=main)](https://coveralls.io/github/vikimova/lab2?branch=main)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=vikimova_2&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=vikimova_2)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=vikimova_2&metric=bugs)](https://sonarcloud.io/summary/new_code?id=vikimova_2)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=vikimova_2&metric=coverage)](https://sonarcloud.io/summary/new_code?id=vikimova_2)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=vikimova_2&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=vikimova_2)
 
 # Пример работы связки Qt + Google Test (gtest) + QtCreator
 
